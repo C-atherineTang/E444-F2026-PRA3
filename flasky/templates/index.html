@@ -6,6 +6,10 @@
     <h1>
         Hello, {% if name %}{{ name }}{% else %}Stranger{% endif %}!
     </h1>
+
+    {% if email %}
+    <p>Your email is {{ email }}.</p>
+    {% endif %}
 </div>
 
 {{ wtf.quick_form(form) }}
